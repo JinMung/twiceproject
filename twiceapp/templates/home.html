@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>TWICE - JAPANESE MEMBER</h1>
+        
+        {% for twice in japanese %}
+        
+                <h1>{{twice.name}}</h1>
+                <p>{{twice.age}}</p>
+                <p>{{twice.birth}}</p>
+                <p>{{twice.nationality}}</p>
+                <p>{{twice.position}}</p>
+                <br><br>
+    
+        {% endfor %}
+        
+        <button style="width:200; background-color:#FFBE04; border:#FFBE04"><a href="{% url 'home2' %}"><h1>Subvocal</h1></a></button> 
+        
+
+        
+        
+        
+    </body>
